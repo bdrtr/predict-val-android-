@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backapp"
+    tools:context=".resultPage">
+
+    <ImageView
+        android:id="@+id/resultImage"
+        android:layout_width="match_parent"
+        android:layout_height="195dp"
+        android:layout_marginTop="-240dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2"
+        app:srcCompat="@drawable/sadface" />
+
+    <TextView
+        android:id="@+id/resultText"
+        android:layout_width="204dp"
+        android:layout_height="66dp"
+        android:layout_marginStart="103dp"
+        android:layout_marginEnd="104dp"
+        android:text="KAYBETTINIZ"
+        android:textColor="@color/ic_banner_background"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+    <Button
+        android:id="@+id/TurnMainMenu_button"
+        android:layout_width="179dp"
+        android:layout_height="104dp"
+        android:layout_marginStart="116dp"
+        android:layout_marginEnd="116dp"
+        android:layout_marginBottom="70dp"
+        android:background="@color/ic_banner_background"
+        android:text="MENUYE DON"
+        android:textColor="@color/ic_banner_background"
+        app:iconTint="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="TextContrastCheck" />
+
+    <TextView
+        android:id="@+id/result_num"
+        android:layout_width="145dp"
+        android:layout_height="33dp"
+        android:layout_marginStart="133dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="133dp"
+        android:text="TextView"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/resultText" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/result" />
+</androidx.constraintlayout.widget.ConstraintLayout>

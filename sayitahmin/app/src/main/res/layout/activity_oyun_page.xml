@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backapp"
+    tools:context=".oyunPage">
+
+    <ImageView
+        android:id="@+id/hearth_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        app:layout_constraintEnd_toStartOf="@+id/hearth_2"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/heart" />
+
+    <ImageView
+        android:id="@+id/hearth_5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/hearth_4"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/heart" />
+
+    <ImageView
+        android:id="@+id/dec_or_inc_png"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="21dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hearth_2"
+        app:srcCompat="@drawable/poff" />
+
+    <ImageView
+        android:id="@+id/hearth_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        app:layout_constraintEnd_toStartOf="@+id/hearth_3"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/hearth_1"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/heart" />
+
+    <ImageView
+        android:id="@+id/hearth_4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        app:layout_constraintEnd_toStartOf="@+id/hearth_5"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/hearth_3"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/heart" />
+
+    <EditText
+        android:textColorHint="@color/white"
+        android:id="@+id/TakeAnumberEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="22dp"
+        android:ems="10"
+        android:hint="hadi!"
+        android:inputType="number"
+        android:minHeight="48dp"
+        android:textColor="@color/buttons"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/stateText" />
+
+    <TextView
+
+        android:id="@+id/stateText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="33dp"
+        android:text="TextView"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dec_or_inc_png" />
+
+    <ImageView
+        android:id="@+id/hearth_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        app:layout_constraintEnd_toStartOf="@+id/hearth_4"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/hearth_2"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/heart" />
+
+    <Button
+        android:id="@+id/take_num_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:background="@color/white"
+        android:text="onayla"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+        android:textColor="@color/ic_banner_background"
+        app:cornerRadius="20sp"
+        app:icon="@color/purple_200"
+        app:iconTint="@color/purple_200"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TakeAnumberEditText"
+        app:rippleColor="@color/teal_200"
+        app:strokeColor="#A61E1E" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
